@@ -1,46 +1,33 @@
-# Getting Started with Create React App
+# SIGame in React with TypeScript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hello, there!
 
-## Available Scripts
+## The game is in dev stage now!
 
-In the project directory, you can run:
+SIGame is my project for college's practice work. Game based on the Russian tv show of the same name. I changed some rules by my will. You may acquaint with the game on official YouTube channel: https://www.youtube.com/@Svoya_igra
 
-### `npm start`
+## Main rules
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-There are from 3 to 5 teams or solo players
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-Teams decides by own who will play first
 
-### `npm test`
+-First team pick the question from grid, telling the topic of the question and amount of scores the question is playing for to the host
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-The host reveals the question to the players
 
-### `npm run build`
+-The question is playing for 10 seconds
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Any team (or solo player) can answer the question by raising they hand (who do it first answer the question), while the team is answering, game is paused, team has 10 seconds to answer
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-If team (or solo player) doesn't answer or give wrong answer they lose that amount of scores the question is playing for and any other team can answer the question
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-If team (or solo player) gives right answer they gain that amount of scores the question is playing for and they are picking next question
 
-### `npm run eject`
+-If nobody answer the question right nobody lose or gain scores and the team who the last picked the question picked again
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-Wins the team with the biggest score
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## I hope I explained rules pretty clearly, but you can understand the game by watching or playing it by your own. Good Luck!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

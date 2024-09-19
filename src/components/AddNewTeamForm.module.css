@@ -1,0 +1,29 @@
+.AddNewTeamForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: blue;
+    width: 500px;
+    height: 300px;
+}
+
+.title {
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.TeamNameField {
+    width: 350px;
+    background-color: white;
+    border-radius: 5px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.AddButton {
+    height: 50px;
+    width: 250px;
+}
