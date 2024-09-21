@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { AddNewTeamForm } from './components/AddNewTeamForm';
+import { AddNewTeamForm } from './components/AddNewTeamForm/AddNewTeamForm';
 import { teamsList } from './constants/teamsList';
+import { StartScreen } from './components/StartScreen/StartScreen';
 
 function App() {
 
@@ -10,14 +11,16 @@ function App() {
 
   const AddNewTeam = (teamName:string) => {
 
-    setTeams((prevState) => [...prevState, {name:teamName, score:0}]);
+    if (teams.length < 5){
+      setTeams((prevState) => [...prevState, {name:teamName, score:0}]);
+    }else {
+      alert("Не может быть более пяти команд!")
+    }
 
   }
 
-  console.log(teams);
-
   return (
-    <AddNewTeamForm onAddNewTeam={AddNewTeam}/>
+    <StartScreen onAddNewTeam={AddNewTeam} teams={teams}/>
   );
 }
 
