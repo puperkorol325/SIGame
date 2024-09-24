@@ -45,12 +45,12 @@ const StartScreen:React.FC<StartScreenProps> = ({ onAddNewTeam, teams }) => {
                 <h2 className={styles.teamsTitle}>Команды</h2>
                 <List className={styles.teamList}>
                     {addedTeams.map((item) => (
-                        <ListItem className={styles.team}>
+                        <div className={styles.teamItem} key={item.key}>
                             <ListItemText primary={item.name}></ListItemText>
-                        </ListItem>
+                        </div>
                     ))}
                 </List>
-                <Button variant="contained" className={styles.startGameButton}>Начать игру!</Button>
+                <Button variant="contained" className={styles.startGameButton}><p className={styles.startGameButtonText}>Начать игру!</p></Button>
             </div>
         </div>
     );

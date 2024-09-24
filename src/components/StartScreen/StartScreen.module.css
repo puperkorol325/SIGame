@@ -11,9 +11,8 @@
 .startGame {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 5%;
     width: 60%;
     height: 100%;
 }
@@ -31,7 +30,7 @@
     height: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     color: white;
 }
@@ -41,9 +40,10 @@
 }
 
 .rulesList {
-    font-size: 1.7vh;
+    font-size: 1.8vh;
     display: flex;
     flex-direction: column;
+    margin-top: 2vh;
 }
 
 .teamsBlock {
@@ -62,26 +62,35 @@
 
 .teamList{
     width: 80%;
-    height: 60%;
+    height: 70%;
     border: 2px white solid;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10%;
+    gap: 6%;
 }
 
-.team {
-    width: 90%;
-    background-color: rgb(158, 157, 157);
+.teamItem {
+    width: 95%;
+    height: 14%;
+    text-indent: 20px;
+    background-color: rgb(143, 143, 143);
+    border: 3px outset rgb(66, 66, 66);
+    display: flex;
+    align-items: center;
 }
 
 .teamList span{
-    font-size: 24px;
+    font-size: 26px;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .startGameButton {
     height: 8%;
     width: 60%;
+}
+
+.startGameButtonText {
     font-size: 28px;
     font-weight: bold;
 }
