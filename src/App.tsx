@@ -5,10 +5,15 @@ import { AddNewTeamForm } from './components/AddNewTeamForm/AddNewTeamForm';
 import { teamsList } from './constants/teamsList';
 import { StartScreen } from './components/StartScreen/StartScreen';
 import { v4 as uuidv4 } from 'uuid';
+import { start } from 'repl';
+import { Playgrid } from './components/Playgrid/Playgrid';
+import { TeamsBar } from './components/TeamsBar/TeamsBar';
+import { questionsList } from './constants/questionsList';
 
 function App() {
 
   const [teams, setTeams] = useState(teamsList);
+  const [gameStatus, setGameStatus] = useState("start");
 
   const AddNewTeam = (teamName:string) => {
 
@@ -20,8 +25,28 @@ function App() {
 
   }
 
+  const handleStartGame = () => {
+
+    if (teams.length >= 3 && teams.length <= 5){
+      setGameStatus("on");
+    }else{
+      alert("Неверное число команд! Команд должно быть от 3 до 5!")
+    }
+
+  }
+
   return (
-    <StartScreen onAddNewTeam={AddNewTeam} teams={teams}/>
+    <>
+      {gameStatus == "start" && (
+        <StartScreen onAddNewTeam={AddNewTeam} onStartGame={handleStartGame} teams={teams}/>
+      )}
+      {gameStatus == "on" && (
+        <Playgrid rows={questionsList.length} columns={Object.keys(questionsList[0].questions).length}/>
+      )}
+      {gameStatus == "on" && (
+        <TeamsBar teams={teams}/>
+      )}
+    </>
   );
 }
 

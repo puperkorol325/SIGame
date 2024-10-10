@@ -9,10 +9,11 @@ import Button from '@mui/material/Button';
 
 type StartScreenProps = {
     onAddNewTeam: (teamName:string) => void;
+    onStartGame: () => void;
     teams: team[];
 }
 
-const StartScreen:React.FC<StartScreenProps> = ({ onAddNewTeam, teams }) => {
+const StartScreen:React.FC<StartScreenProps> = ({ onAddNewTeam, onStartGame, teams }) => {
 
     const [addedTeams, setAddedTeams] = useState(teams);
 
@@ -50,7 +51,7 @@ const StartScreen:React.FC<StartScreenProps> = ({ onAddNewTeam, teams }) => {
                         </div>
                     ))}
                 </List>
-                <Button variant="contained" className={styles.startGameButton}><p className={styles.startGameButtonText}>Начать игру!</p></Button>
+                <Button variant="contained" className={styles.startGameButton}><p className={styles.startGameButtonText} onClick={onStartGame}>Начать игру!</p></Button>
             </div>
         </div>
     );

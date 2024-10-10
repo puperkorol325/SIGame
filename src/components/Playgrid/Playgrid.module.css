@@ -1,0 +1,52 @@
+.grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100vw;
+    height: 72vh;
+}
+
+.gridRow {
+    display: flex;
+}
+
+.gridCellForTopic{
+    width: 20vw;
+    border: 1px outset #dbdada;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b00b6;
+}
+
+.topicTitle {
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    font-weight: 700;
+}
+
+.questionTitle {
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+.gridCell {
+    flex: 1 1 150px;
+    border: 1px outset #dbdada;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b00b6;
+    transition: 0.2s background-color;
+}
+
+.gridCell:hover {
+    border: 1px outset #555555;
+    background-color: #11006d;
+}
