@@ -16,8 +16,8 @@ const TeamsBar:React.FC<TeamsBarProps> = ({ teams }) => {
 
     return(
         <div className={styles.teamsBar}>
-            {teamsList.map(item => ( 
-                <div className={styles.teamItem}>
+            {teamsList.map((item,index) => ( 
+                <div key={index} className={styles.teamItem}>
                     <h2 className={styles.teamName}>{item.name}</h2>
                     <h3 className={styles.teamScore}>{item.score}</h3>
                 </div>

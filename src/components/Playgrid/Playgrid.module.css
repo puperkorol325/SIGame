@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     width: 100vw;
-    height: 72vh;
+    height: 78vh;
 }
 
 .gridRow {
@@ -16,7 +16,7 @@
 .gridCellForTopic{
     width: 20vw;
     border: 1px outset #dbdada;
-    height: 12vh;
+    height: 13vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,15 +38,26 @@
 .gridCell {
     flex: 1 1 150px;
     border: 1px outset #dbdada;
-    height: 12vh;
+    height: 13vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1b00b6;
-    transition: 0.2s background-color;
+    background-color: #1800a1;
+    transition: 0.5s background-color;
 }
 
 .gridCell:hover {
     border: 1px outset #555555;
     background-color: #11006d;
+    cursor: pointer;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blink {
+    animation: blink 0.5s linear infinite;
 }

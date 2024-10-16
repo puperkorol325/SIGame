@@ -9,11 +9,14 @@ import { start } from 'repl';
 import { Playgrid } from './components/Playgrid/Playgrid';
 import { TeamsBar } from './components/TeamsBar/TeamsBar';
 import { questionsList } from './constants/questionsList';
+import { QuestionWindow } from './components/QuestionWindow/QuestionWindow';
 
 function App() {
 
   const [teams, setTeams] = useState(teamsList);
+  const [questions, setQuestions] = useState(questionsList);
   const [gameStatus, setGameStatus] = useState("start");
+  const [pickedQuestion, setPickedQuestion] = useState({topicKey: -1, key: -1});
 
   const AddNewTeam = (teamName:string) => {
 
@@ -35,15 +38,26 @@ function App() {
 
   }
 
+  const handlePick = async (topicKey:number, key:number) => {
+    await setPickedQuestion({topicKey, key});
+    setGameStatus('question');
+  }
+
   return (
     <>
       {gameStatus == "start" && (
         <StartScreen onAddNewTeam={AddNewTeam} onStartGame={handleStartGame} teams={teams}/>
       )}
       {gameStatus == "on" && (
-        <Playgrid rows={questionsList.length} columns={Object.keys(questionsList[0].questions).length}/>
+        <Playgrid onPickQuestion={handlePick}/>
       )}
       {gameStatus == "on" && (
+        <TeamsBar teams={teams}/>
+      )}
+      {gameStatus == "question" && (
+        <QuestionWindow topicKey={pickedQuestion.topicKey} questionKey={pickedQuestion.key}/>
+      )}
+      {gameStatus == "question" && (
         <TeamsBar teams={teams}/>
       )}
     </>
