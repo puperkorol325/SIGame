@@ -1,97 +1,98 @@
 .startScreen {
-    position: absolute;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 95vw;
-    height: 95vh;
-    background-color: blue;
-    font-family: "Roboto Condensed", sans-serif;
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 95vw;
+  height: 95vh;
+  background-color: blue;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .startGame {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 60%;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 100%;
 }
 
 .title {
-    color: white;
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 250%;
-    font-weight: bold;
-    height: 5%;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 250%;
+  font-weight: bold;
+  height: 5%;
 }
 
 .rulesBlock {
-    width: 90%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    color: white;
+  width: 90%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  color: white;
 }
 
 .rulesTitle {
-    font-size: 160%;
+  font-size: 160%;
 }
 
 .rulesList {
-    font-size: 1.8vh;
-    display: flex;
-    flex-direction: column;
-    margin-top: 2vh;
+  font-size: 1.8vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
 }
 
 .teamsBlock {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
 }
 
 .teamsTitle {
-    font-size: 200%;
+  font-size: 200%;
 }
 
-.teamList{
-    width: 80%;
-    height: 70%;
-    border: 2px white solid;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6%;
+.teamList {
+  width: 80%;
+  height: 70%;
+  border: 2px white solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6%;
 }
 
 .teamItem {
-    width: 95%;
-    height: 14%;
-    text-indent: 20px;
-    background-color: rgb(143, 143, 143);
-    border: 3px outset rgb(66, 66, 66);
-    display: flex;
-    align-items: center;
+  width: 95%;
+  height: 14%;
+  text-indent: 20px;
+  background-color: rgb(143, 143, 143);
+  border: 3px outset rgb(66, 66, 66);
+  display: flex;
+  align-items: center;
 }
 
-.teamList span{
-    font-size: 26px;
-    font-family: "Roboto Condensed", sans-serif;
+.teamList span {
+  font-size: 26px;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .startGameButton {
-    height: 8%;
-    width: 60%;
+  height: 8%;
+  width: 60%;
 }
 
 .startGameButtonText {
-    font-size: 28px;
-    font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
 }
