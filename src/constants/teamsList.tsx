@@ -1,5 +1,5 @@
 import { team } from "../types/team";
 
-const teamsList:team[] = [];
+const teamsList: team[] = [];
 
 export { teamsList };

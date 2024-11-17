@@ -2,7 +2,7 @@
 
 Hello, there!
 
-## The game is in dev stage now!
+## The game is fully completed! You may try it right now!
 
 SIGame is my project for college's practice work. Game based on the Russian tv show of the same name. I changed some rules by my will. You may acquaint with the game on official YouTube channel: https://www.youtube.com/@Svoya_igra
 
@@ -29,5 +29,3 @@ SIGame is my project for college's practice work. Game based on the Russian tv s
 -Wins the team with the biggest score
 
 ## I hope I explained rules pretty clearly, but you can understand the game by watching or playing it by your own. Good Luck!
-
-
